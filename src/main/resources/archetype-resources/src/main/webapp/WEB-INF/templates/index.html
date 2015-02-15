@@ -1,0 +1,25 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+<h1 th:text="${symbol_pound}{hello.message}">${symbol_pound}{hello.message}</h1>
+<table>
+    <thead>
+    <tr>
+        <td th:text="${symbol_pound}{table.column.id}"></td>
+        <td th:text="${symbol_pound}{table.column.name}"></td>
+    </tr>
+    </thead>
+    <tr data-th-each="user: ${symbol_dollar}{users}">
+        <td th:text="${symbol_dollar}{user.id}">10</td>
+        <td th:text="${symbol_dollar}{user.name}">John</td>
+    </tr>
+</table>
+</body>
+</html>
