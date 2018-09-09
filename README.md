@@ -31,7 +31,7 @@ What is inside?
 * hikori
 * thymeleaf
 * hibernate-entitymanager
-* h2 (1.4.185)
+* h2
 
 
 Installation
@@ -52,7 +52,7 @@ Create a project
     mvn archetype:generate \
         -DarchetypeGroupId=com.github.jhrom.archetypes \
         -DarchetypeArtifactId=spring-web-xml-archetype \
-        -DarchetypeVersion=1.0.0 \
+        -DarchetypeVersion=5.0.0 \
         -DgroupId=my.groupid \
         -DartifactId=artifactId \
         -Dversion=version \ 
