@@ -1,2 +1,2 @@
-INSERT INTO User(name) VALUES('John')
-INSERT INTO User(name) VALUES('Greg')
+INSERT INTO User(id, name) VALUES(1, 'John')
+INSERT INTO User(id, name) VALUES(2, 'Greg')

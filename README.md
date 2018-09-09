@@ -24,14 +24,13 @@ To do
 What is inside?
 -------------------------
 * Spring platform (ioc, web, test, orm, data jpa)
-* javax.servlet-api (3.0)
+* javax.servlet-api 
 * logback-classic
-* junit (4.12)
-* mockito-all (1.10.19)
-* hikori (2.3.2)
-* thymeleaf (2.1.4)
-* hibernate-entitymanager (4.3.8.Final)
-* hibernate-jpa-2.1-api
+* junit 
+* mockito
+* hikori
+* thymeleaf
+* hibernate-entitymanager
 * h2 (1.4.185)
 
 
@@ -56,14 +55,15 @@ Create a project
         -DarchetypeVersion=1.0.0 \
         -DgroupId=my.groupid \
         -DartifactId=artifactId \
-        -Dversion=version
+        -Dversion=version \ 
+        -DinteractiveMode=false
 ```
 
 Run the project
 ----------------
 
 ```bash
-	mvn tomcat7:run
+	mvn jetty:run
 ```
 
 Check in your browser
